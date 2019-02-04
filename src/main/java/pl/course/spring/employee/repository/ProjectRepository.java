@@ -1,0 +1,9 @@
+package pl.course.spring.employee.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+
+import pl.course.spring.employee.model.Project;
+
+public interface ProjectRepository extends JpaRepository<Project, Long>, JpaSpecificationExecutor<Project>{
+}
